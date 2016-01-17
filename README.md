@@ -1,0 +1,2 @@
+# sakura
+Sakura makes it easy to build custom, modern, enterprise-scale Microsoft .NET server applications. The architecture is technology agnostic based on proven design principles of Modern Enterprise Application Architecture (EAA) with great support for the requirements of modern apps: data-driven APIs with a scalable, service-oriented architecture. One can use it for any web application project - top to bottom. 
