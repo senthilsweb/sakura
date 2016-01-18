@@ -1,0 +1,5 @@
+﻿<?xml version="1.0"?>
+<objects xmlns="http://www.springframework.net">
+  <object id="Logger" type="BASE.COMMON.Logging.Log4NetAdapter, BASE.COMMON" singleton="false" />
+  <object id="EncriptWrapper" type="BASE.COMMON.EncriptWrapper, BASE.COMMON" singleton="false" />  
+</objects>
