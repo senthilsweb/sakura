@@ -1,5 +1,0 @@
-﻿<?xml version="1.0"?>
-<objects xmlns="http://www.springframework.net">  
-  <!--<object id="UserFacade" type="SAKURA.FACADE.UserFacade, SAKURA.FACADE" />
-  <object id="UserTypeFacade" type="SAKURA.FACADE.UserTypeFacade, SAKURA.FACADE" />-->
-</objects>

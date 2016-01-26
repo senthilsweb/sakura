@@ -1,6 +1,0 @@
-﻿<?xml version="1.0"?>
-<objects xmlns="http://www.springframework.net">
-  <!--<object id="Mailer" type="SAKURA.SERVICEAGENT.SmtpEmailNotificationServiceAgent, SAKURA.SERVICEAGENT" singleton="false" />-->
-  <!--<object id="Mailer" type="SAKURA.SERVICEAGENT.AmazonSesEmailNotificationServiceAgent, SAKURA.SERVICEAGENT" singleton="false" />-->
-  <!--<object id="Mailer" type="SAKURA.SERVICEAGENT.MailgunEmailNotificationServiceAgent, SAKURA.SERVICEAGENT" singleton="false" />-->
-</objects>
