@@ -1,35 +1,30 @@
-﻿using BASE.COMMON.Factory;
+﻿//The MIT License (MIT)
+
+//Copyright (c) 2016 Senthilnathan Karuppaiah
+
+// <author> </author>
+// <date> </date>
+// <summary> </summary>
+
+//Permission is hereby granted, free of charge, to any person obtaining a copy
+//of this software and associated documentation files (the "Software"), to deal
+//in the Software without restriction, including without limitation the rights
+//to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//copies of the Software, and to permit persons to whom the Software is
+//furnished to do so, subject to the following conditions:
+
+//The above copyright notice and this permission notice shall be included in all
+//copies or substantial portions of the Software.
+
+//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//SOFTWARE.
+using BASE.COMMON.Factory;
 using BASE.COMMON.Logging;
-//
-// Utilities.cs
-// Description : Utilities streamline processes for everyday programming tasks. These Utility operations
-//               are brain-savers that simplify the common and time-consuming bits of app-building (like data conversions and formatting).
-// Note: Some of the functions are collected from internet blog posts and Github Gits, along side of the operations specified the internet link of the original source.
-//       I strongly recommed to include such references while adding new functions & operations
-// Authors:
-// * * * * * * * * * * 
-//
-// Copyright (C) 2015 * * * * * * * * * * 
-//
-// Permission is hereby granted, free of charge, to any person obtaining
-// a copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to
-// permit persons to whom the Software is furnished to do so, subject to
-// the following conditions:
-//
-// The above copyright notice and this permission notice shall be
-// included in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-// NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-// LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-// OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-//
 using Centroid;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
@@ -72,7 +67,7 @@ namespace BASE.COMMON
 			get
 			{
 				//TODO : Get the file path from configuration / settings (App.config / web.config) or follow some convetion to dynamically resolve the path & name.
-                return Config.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Configuration\variables\settings-dev.config"));
+                return Config.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"App_Data\config\dev.json"));
 			}
 		}
 
@@ -81,7 +76,7 @@ namespace BASE.COMMON
 			get
 			{
 				//TODO : Get the file path from configuration / settings (App.config / web.config) or follow some convetion to dynamically resolve the path & name.
-                return Config.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Configuration\messages\errormessages_en.json"));
+                return Config.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"App_Data\message\en.json"));
 			}
 		}
 

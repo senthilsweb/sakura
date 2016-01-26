@@ -84,15 +84,26 @@
     <Compile Include="Advice\MethodExecutionTimeAdvice.cs" />
     <Compile Include="Attributes\TimingTheMethodAttribute.cs" />
     <Compile Include="Data\IDao.cs" />
-    <Compile Include="Encryption\EncriptStrategyDef.cs" />
-    <Compile Include="Encryption\EncriptWrapper.cs" />
-    <Compile Include="Encryption\IEncriptWrapper.cs" />
-    <Compile Include="Encryption\IEncriptStrategy.cs" />
-    <Compile Include="Encryption\IKeyGenerator.cs" />
-    <Compile Include="Encryption\KeyGeneratorDef.cs" />
+    <Compile Include="Encryption\EncriptStrategyDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Encryption\EncriptWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Encryption\IEncriptStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Encryption\IEncriptWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Encryption\IKeyGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Encryption\KeyGeneratorDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Factory\UtilsFactory.cs" />
     <Compile Include="Ioc\GenericIocExposer.cs" />
-    <Compile Include="Logging\LogEmptyAdapter.cs" />
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Log4NetAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

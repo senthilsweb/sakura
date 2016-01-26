@@ -1,0 +1,7 @@
+﻿{
+	"invalid_credentials": { "code": "00001", "message": "Invalid Username or Password" },
+	"user_already_exists": { "code": "00002", "message": "User already exists" },
+	"un_authorized_access": { "code": "00003", "message": "Unauthorized access" },
+	"invalid_or_empty_fb_access_token": { "code": "00004", "message": "Facebook access token is not valid" },
+	"email_does_not_match_fb_access_token": { "code": "00005", "message": "Email-id does not match as per facebook data." }
+}

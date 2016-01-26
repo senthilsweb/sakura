@@ -1,0 +1,5 @@
+﻿<?xml version="1.0"?>
+<objects xmlns="http://www.springframework.net">
+  <!--<object id="UserDao" type="SAKURA.DATA.UserDao, SAKURA.DATA" />
+  <object id="UserTypeDao" type="SAKURA.DATA.UserTypeDao, SAKURA.DATA" />--> 
+</objects>

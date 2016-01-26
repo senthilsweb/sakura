@@ -164,14 +164,25 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Configuration\messages\errormessages_en.json" />
-    <None Include="Configuration\logging\log4net.config" />
-    <None Include="Configuration\variables\settings-tst.config" />
-    <None Include="Configuration\variables\settings-stg.config" />
-    <None Include="Configuration\variables\settings-dev.config" />
+    <Content Include="App_Data\logging\log4net.config" />
+    <Content Include="App_Data\message\en.json" />
+    <None Include="App_Data\config\dev.json" />
+    <Content Include="App_Data\config\settings-stg.config" />
+    <Content Include="App_Data\config\settings-tst.config" />
     <None Include="connString.config" />
     <None Include="packages.config" />
     <None Include="Scripts\jquery-2.2.0.min.map" />
+    <Content Include="App_Data\aspect\ioc.aspect.sendemailafterpasswordchange.xml" />
+    <Content Include="App_Data\aspect\ioc.aspect.sendemailpostregistration.xml" />
+    <Content Include="App_Data\aspect\ioc.aspect.timingthemethod.all.xml" />
+    <Content Include="App_Data\aspect\ioc.aspect.timingthemethod.controllers.xml" />
+    <Content Include="App_Data\aspect\ioc.aspect.transformuser.xml" />
+    <Content Include="App_Data\ioc\ioc.data.xml" />
+    <Content Include="App_Data\ioc\ioc.facade.xml" />
+    <Content Include="App_Data\ioc\ioc.serviceagent.xml" />
+    <Content Include="App_Data\ioc\ioc.utils.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">
@@ -182,18 +193,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Configuration\aspect\ioc.aspect.addtoworkflowactivityafternewroarcreation.xml" />
-    <Content Include="Configuration\aspect\ioc.aspect.sendemailafterpasswordchange.xml" />
-    <Content Include="Configuration\aspect\ioc.aspect.sendemailpostregistration.xml" />
-    <Content Include="Configuration\aspect\ioc.aspect.timingthemethod.all.xml" />
-    <Content Include="Configuration\aspect\ioc.aspect.timingthemethod.controllers.xml" />
-    <Content Include="Configuration\aspect\ioc.aspect.transformuser.xml" />
-    <Content Include="Configuration\ioc\ioc.data.xml" />
-    <Content Include="Configuration\ioc\ioc.facade.xml" />
-    <Content Include="Configuration\ioc\ioc.serviceagent.xml" />
-    <Content Include="Configuration\ioc\ioc.utils.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Scripts\jquery-2.2.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.0.js" />
     <Content Include="Scripts\jquery-2.2.0.min.js" />
@@ -201,7 +200,7 @@
     <Content Include="Scripts\jquery.signalR-2.2.0.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Configuration\templates\" />
+    <Folder Include="App_Data\template\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BASE.COMMON\BASE.COMMON.csproj">
